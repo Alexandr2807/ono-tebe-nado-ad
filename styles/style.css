@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
 }
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -10,6 +11,7 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
 .header-nav-links {
   display: flex;
   gap: 32px;
@@ -70,6 +72,7 @@ body {
   font-size: 18px;
   line-height: 1.35;
 }
+
 .overlay {
   position: absolute;
   width: 100%;
@@ -78,8 +81,8 @@ body {
   left: 0;
   opacity: 0.62;
   background-color: #000000;
-
 }
+
 .cover {
   max-width: 1100px;
   width: 100%;
@@ -90,15 +93,15 @@ body {
   padding: 165px 50px 50px 50px;
   background-position: center;
   height: 757px;
-
-    
 }
+
 .content {
   width: 100%;
   margin: 0 auto;
   max-width: 1100px;
   box-sizing: border-box;
 }
+
 .cover-title {
   display: flex;
   flex-direction: column;
@@ -110,18 +113,22 @@ body {
   text-transform: uppercase;
   letter-spacing: 30px;
 }
+
 .aligned-text-left {
   text-align: left;
 }
+
 .aligned-text-center {
   text-align: center;
   margin-left: 32px;
 }
+
 .aligned-text-right {
   text-align: right;
   margin: -5px 0px 0px 614px;
   padding: 0px 0px 0px 0px;
 }
+
 .cover-subtitle {
   position: relative;
   z-index: 1;
@@ -140,19 +147,21 @@ body {
   word-spacing: 18px;
   margin-top:-10px;
 }
+
 .button-raise {
   padding: 0 32px 0 31px;
   border: 1px solid;
   color: white;
   background-color: transparent;
-  font-weight: normal;
-  font-size: 22px;
-  text-transform: uppercase;
   margin-left: 31px;
   margin-top:-13px;
   height: 51px;
   width: 256px;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
 }
+
 .button-raise:hover {
   color: #000000;
   background-color: white;
@@ -165,11 +174,11 @@ body {
 }
 
 .lots-heading {
+  text-transform: uppercase;
   padding: 0 0 27px 40px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
-  text-transform: uppercase;
 }
 
 .lots-card-list {
@@ -189,14 +198,15 @@ body {
 
 .card {
   position: relative;
+  width: 334px;
+  height: 596px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
-  width: 334px;
-  height: 596px;
   padding: 50px 40px;
 }
+
 .card-film {
   background-image: url(../images/card-lot-01.jpg);
   background-size: cover;
@@ -220,11 +230,11 @@ body {
 
 .card-title {
   position: relative;
-  color: white;
   font-weight: bold;
   text-decoration-line: underline;
   text-transform: uppercase;
   font-size: 22px;
+  color: white;
 }
 
 .card-text {
@@ -236,12 +246,13 @@ body {
 
 .lots-more {
   display: block;
+  width: fit-content;
   margin: 30px 0 0 40px;
   font-size: 20px;
   text-decoration-line: underline;
   text-underline-position: under;
-  width: fit-content;
 }
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -304,22 +315,27 @@ body {
   max-width:1100px;
   width:100%;
 }
+
 .footer-menu {
   width: auto;
   height: 48px;
 }
+
 .footer-menu-list {
   list-style: none;
   text-align: center;
 }
+
 .footer-menu-link {
   font-size: 18px;
   line-height: normal;
   text-underline-position: under;
 }
+
 .footer-menu-link-active {
   text-decoration: none;
 }
+
 .footer-social-icon {
   width: auto;
   height: 48px;
