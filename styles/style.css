@@ -1,19 +1,16 @@
 body {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   min-height: 100vh;
 }
 
 .header {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   height: 293px;
   max-width: 1100px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .header-nav-links {
@@ -51,7 +48,6 @@ body {
   justify-self: center;
   align-self: center;
   width: 140px;
-  height: auto;
 }
 
 .header-logo-image {
@@ -65,7 +61,7 @@ body {
 
 .header-address {
   justify-self: end;
-  font-style: normal;
+  font-style: inherit;
   padding-right: 84px;
 }
 
@@ -93,6 +89,13 @@ body {
   z-index: 1;
 }
 
+.content {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
+  box-sizing: border-box;
+}
+
 .cover {
   max-width: 1100px;
   width: 100%;
@@ -100,13 +103,6 @@ body {
   position: relative;
   padding: 165px 50px 50px;
   height: 757px;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
 }
 
 .cover-title {
@@ -144,7 +140,6 @@ body {
   position: relative;
   z-index: 2;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   gap: 78px;
   padding: 117px 0 0;
@@ -160,12 +155,13 @@ body {
 }
 
 .button-raise {
+  display: inline;
   padding: 0 32px;
   border: 1px solid currentColor;
   color: #ffffff;
   background: transparent;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
   margin-left: 31px;
   margin-top: -13px;
@@ -363,23 +359,4 @@ body {
 .footer-social-icon {
   width: auto;
   height: 48px;
-}
-
-/* Дополнительные стили для улучшения совместимости */
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-ul, ol {
-  margin: 0;
-  padding: 0;
 }
